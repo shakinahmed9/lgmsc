@@ -10,10 +10,10 @@
 </head>
 <body>
 
-  <!-- ========== HEADER / NAV ========== -->
-  <div class="header" role="banner">
+  <!-- HEADER -->
+  <div class="header">
     <div class="logo">TEAM <span>LGMSC</span></div>
-    <nav class="nav" role="navigation" aria-label="Primary">
+    <nav class="nav">
       <a href="#home" class="nav-link active">Home</a>
       <a href="#team" class="nav-link">Team</a>
       <a href="#join" class="nav-link">Join Us</a>
@@ -24,9 +24,9 @@
   <div class="wrap">
 
     <!-- HOME -->
-    <section id="home" class="home" aria-labelledby="home-title">
-      <div class="hero two-col" role="region" aria-label="Home hero">
-        <aside class="card" aria-label="Profile card">
+    <section id="home" class="home">
+      <div class="hero two-col">
+        <aside class="card">
           <div class="avatar"><img src="/team.jpg" alt="Profile"></div>
           <h1 class="title">TEAM LGMSC <br><small style="color:var(--muted);font-weight:600">Creative Developer & Designer</small></h1>
           <div class="socials">
@@ -50,35 +50,35 @@
     </section>
 
     <!-- TEAM -->
-    <section id="team" class="team" aria-labelledby="team-title">
+    <section id="team" class="team">
       <div class="team-hero">
-        <h2 id="team-title">Our Crew</h2>
+        <h2>Our Crew</h2>
         <p class="lead">OUR TEAM</p>
       </div>
 
-      <div class="team-grid" role="list">
-        <article class="member" role="listitem">
+      <div class="team-grid">
+        <article class="member">
           <div class="photo"><img src="/my.jpg" alt="Shakin Ahmed"></div>
           <h3>Shakin Ahmed</h3>
           <div class="role">Owner of the Site</div>
           <p class="bio">Leads the cyber & technical operations.</p>
         </article>
 
-        <article class="member" role="listitem">
+        <article class="member">
           <div class="photo"><img src="/maruf.jpg" alt="Maruf"></div>
           <h3>Mohammad Ebena Maruf</h3>
           <div class="role">Manager</div>
           <p class="bio">Always helps with team resources & ideas.</p>
         </article>
 
-        <article class="member" role="listitem">
+        <article class="member">
           <div class="photo"><img src="/tamim.jpg" alt="Tamim"></div>
           <h3>Tamim Hossain</h3>
           <div class="role">Event Organizer</div>
           <p class="bio">Manages fun & social activities.</p>
         </article>
 
-        <article class="member" role="listitem">
+        <article class="member">
           <div class="photo"><img src="/modhu.jpg" alt="Modhu"></div>
           <h3>Abbraham Modhu</h3>
           <div class="role">Support Staff</div>
@@ -88,12 +88,13 @@
     </section>
 
     <!-- JOIN US -->
-    <section id="join" class="join" aria-labelledby="join-title">
+    <section id="join" class="join">
       <div class="join-card">
-        <h2 id="join-title">Join Us</h2>
+        <h2>Join Us</h2>
         <p class="lead">If you want to join our team, you are most welcome.</p>
 
-        <form class="apply-form" onsubmit="handleJoin(event)">
+        <!-- 🔹 Form ID যোগ করা হয়েছে -->
+        <form class="apply-form" id="joinForm">
           <label>Full name
             <input name="name" required placeholder="Your Name">
           </label>
@@ -124,10 +125,12 @@
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="contact" aria-labelledby="contact-title">
+    <section id="contact" class="contact">
       <div class="contact-card">
-        <h2 id="contact-title">Contact</h2>
-        <form class="contact-form" onsubmit="handleContact(event)">
+        <h2>Contact</h2>
+
+        <!-- 🔹 Form ID যোগ করা হয়েছে -->
+        <form class="contact-form" id="contactForm">
           <label>Your name
             <input name="name" required placeholder="Your Name">
           </label>
@@ -157,6 +160,7 @@
     </footer>
   </div>
 
+  <!-- 🔹 External JavaScript file -->
   <script src="script.js"></script>
 </body>
 </html>
