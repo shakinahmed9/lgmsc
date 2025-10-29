@@ -1,166 +1,64 @@
-<!doctype html>
-<html lang="bn">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>TEAM LGMSC — Home</title>
-  <meta name="description" content="TEAM LGMSC — Home, Team, Join, Contact" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+// ========== BASIC SITE FEATURES ==========
 
-  <!-- HEADER -->
-  <div class="header">
-    <div class="logo">TEAM <span>LGMSC</span></div>
-    <nav class="nav">
-      <a href="#home" class="nav-link active">Home</a>
-      <a href="#team" class="nav-link">Team</a>
-      <a href="#join" class="nav-link">Join Us</a>
-      <a href="#contact" class="nav-link">Contact</a>
-    </nav>
-  </div>
+// Dynamic year
+document.getElementById('year').textContent = new Date().getFullYear();
 
-  <div class="wrap">
+// Scroll spy
+const navLinks = document.querySelectorAll('.nav-link');
+const sections = ['home', 'team', 'join', 'contact'].map(id => document.getElementById(id));
+function onScroll() {
+  const y = window.scrollY + 120;
+  let current = sections[0].id;
+  for (const sec of sections) { if (sec.offsetTop <= y) current = sec.id; }
+  navLinks.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + current));
+}
+window.addEventListener('scroll', onScroll, { passive: true });
+onScroll();
 
-    <!-- HOME -->
-    <section id="home" class="home">
-      <div class="hero two-col">
-        <aside class="card">
-          <div class="avatar"><img src="/team.jpg" alt="Profile"></div>
-          <h1 class="title">TEAM LGMSC <br><small style="color:var(--muted);font-weight:600">Creative Developer & Designer</small></h1>
-          <div class="socials">
-            <a href="#">🌐</a>
-            <a href="#">💼</a>
-            <a href="#">🐦</a>
-          </div>
-        </aside>
+// Navigation click
+navLinks.forEach(a => {
+  a.addEventListener('click', () => {
+    navLinks.forEach(x => x.classList.remove('active'));
+    a.classList.add('active');
+  });
+});
 
-        <main>
-          <div class="panel">
-            <h1 class="title"><span>WELCOME</span> — TEAM LGMSC</h1>
-            <p class="lead">We are the students of Lalbag Govt. Model School And College. And this is our personal website.</p>
-            <div style="margin-top:14px;">
-              <a class="btn primary" href="#team" style="margin-right:10px">Meet the Team</a>
-              <a class="btn ghost" href="#join">Join Us</a>
-            </div>
-          </div>
-        </main>
-      </div>
-    </section>
 
-    <!-- TEAM -->
-    <section id="team" class="team">
-      <div class="team-hero">
-        <h2>Our Crew</h2>
-        <p class="lead">OUR TEAM</p>
-      </div>
+// ========== DISCORD WEBHOOK INTEGRATION ==========
+const webhookURL = "https://discord.com/api/webhooks/XXXXXXX/XXXXXXXXXX"; // <-- তোমার webhook বসাও
 
-      <div class="team-grid">
-        <article class="member">
-          <div class="photo"><img src="/my.jpg" alt="Shakin Ahmed"></div>
-          <h3>Shakin Ahmed</h3>
-          <div class="role">Owner of the Site</div>
-          <p class="bio">Leads the cyber & technical operations.</p>
-        </article>
+async function sendToDiscord(formData, formName) {
+  const data = Object.fromEntries(new FormData(formData).entries());
+  const embed = {
+    title: `📩 New ${formName} Submission`,
+    color: 5814783,
+    fields: Object.entries(data).map(([k, v]) => ({
+      name: k.charAt(0).toUpperCase() + k.slice(1),
+      value: v || "N/A",
+      inline: false
+    })),
+    timestamp: new Date(),
+  };
 
-        <article class="member">
-          <div class="photo"><img src="/maruf.jpg" alt="Maruf"></div>
-          <h3>Mohammad Ebena Maruf</h3>
-          <div class="role">Manager</div>
-          <p class="bio">Always helps with team resources & ideas.</p>
-        </article>
+  await fetch(webhookURL, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ embeds: [embed] }),
+  });
+}
 
-        <article class="member">
-          <div class="photo"><img src="/tamim.jpg" alt="Tamim"></div>
-          <h3>Tamim Hossain</h3>
-          <div class="role">Event Organizer</div>
-          <p class="bio">Manages fun & social activities.</p>
-        </article>
+// Join form handler
+document.getElementById("joinForm").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  await sendToDiscord(e.target, "Join Us");
+  alert("✅ Application sent successfully!");
+  e.target.reset();
+});
 
-        <article class="member">
-          <div class="photo"><img src="/modhu.jpg" alt="Modhu"></div>
-          <h3>Abbraham Modhu</h3>
-          <div class="role">Support Staff</div>
-          <p class="bio">Handles support & logistics.</p>
-        </article>
-      </div>
-    </section>
-
-    <!-- JOIN US -->
-    <section id="join" class="join">
-      <div class="join-card">
-        <h2>Join Us</h2>
-        <p class="lead">If you want to join our team, you are most welcome.</p>
-
-        <!-- 🔹 Form ID যোগ করা হয়েছে -->
-        <form class="apply-form" id="joinForm">
-          <label>Full name
-            <input name="name" required placeholder="Your Name">
-          </label>
-
-          <label>Email
-            <input name="email" type="email" required placeholder="you@domain.com">
-          </label>
-
-          <label>Role you want to apply for
-            <select name="role">
-              <option>Developer</option>
-              <option>Designer</option>
-              <option>Content</option>
-              <option>Support</option>
-            </select>
-          </label>
-
-          <label>Short bio / Why join?
-            <textarea name="bio" rows="4" required placeholder="Why you'd be a good fit"></textarea>
-          </label>
-
-          <div class="form-row">
-            <button class="btn" type="submit">Apply Now</button>
-            <button class="btn ghost" type="reset">Reset</button>
-          </div>
-        </form>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="contact">
-      <div class="contact-card">
-        <h2>Contact</h2>
-
-        <!-- 🔹 Form ID যোগ করা হয়েছে -->
-        <form class="contact-form" id="contactForm">
-          <label>Your name
-            <input name="name" required placeholder="Your Name">
-          </label>
-
-          <label>Your email
-            <input name="email" type="email" required placeholder="you@domain.com">
-          </label>
-
-          <label>Message
-            <textarea name="message" rows="5" required placeholder="Your message..."></textarea>
-          </label>
-
-          <div class="form-row">
-            <button class="btn" type="submit">Send Message</button>
-          </div>
-        </form>
-
-        <div style="margin-top:14px; color:var(--muted)">
-          <strong>Email:</strong> <span style="color:#cbd6e8">team@lgmsc.example</span><br>
-          <strong>Location:</strong> <span style="color:#cbd6e8">Dhaka, Bangladesh</span>
-        </div>
-      </div>
-    </section>
-
-    <footer class="site-footer">
-      © <span id="year"></span> TEAM LGMSC — Built with ❤️ by Shakin Ahmed
-    </footer>
-  </div>
-
-  <!-- 🔹 External JavaScript file -->
-  <script src="script.js"></script>
-</body>
-</html>
+// Contact form handler
+document.getElementById("contactForm").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  await sendToDiscord(e.target, "Contact");
+  alert("✅ Message sent successfully!");
+  e.target.reset();
+});
