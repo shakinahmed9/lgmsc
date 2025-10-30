@@ -1,165 +1,64 @@
 <!doctype html>
 <html lang="bn">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>TEAM LGMSC — Home</title>
-  <meta name="description" content="TEAM LGMSC — Home, Team, Join, Contact" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TEAM LGMSC — Home</title>
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body class="page-home">
+<header class="site-header">
+<div class="logo">TEAM <span>LGMSC</span></div>
+<nav class="nav">
+<a href="index.html" class="active">Home</a>
+<a href="team.html">Team</a>
+<a href="join.html">Join Us</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
 
-  <!-- HEADER -->
-  <div class="header">
-    <div class="logo">TEAM <span>LGMSC</span></div>
-    <nav class="nav">
-      <a href="#home" class="nav-link active">Home</a>
-      <a href="#team" class="nav-link">Team</a>
-      <a href="#join" class="nav-link">Join Us</a>
-      <a href="#contact" class="nav-link">Contact</a>
-    </nav>
-  </div>
 
-  <div class="wrap">
+<main class="home-hero">
+<div class="hero-inner">
+<h1 class="title">স্বাগতম — <span>TEAM LGMSC</span></h1>
+<p class="lead">আমরা এক অনবদ্য দল — সার্ভিস, ক্রিয়েটিভিটি ও কমিউনিটি নিয়ে কাজ করি।</p>
 
-    <!-- HOME -->
-    <section id="home" class="home">
-      <div class="hero two-col">
-        <aside class="card">
-          <div class="avatar"><img src="/team.jpg" alt="Profile"></div>
-          <h1 class="title">TEAM LGMSC <br><small style="color:var(--muted);font-weight:600">Creative Developer & Designer</small></h1>
-          <div class="socials">
-            <a href="#">🌐</a>
-            <a href="#">💼</a>
-            <a href="#">🐦</a>
-          </div>
-        </aside>
 
-        <main>
-          <div class="panel">
-            <h1 class="title"><span>WELCOME</span> — TEAM LGMSC</h1>
-            <p class="lead">We are the students of Lalbag Govt. Model School And College. And this is our personal website.</p>
-            <div style="margin-top:14px;">
-              <a class="btn primary" href="#team" style="margin-right:10px">Meet the Team</a>
-              <a class="btn ghost" href="#join">Join Us</a>
-            </div>
-          </div>
-        </main>
-      </div>
-    </section>
+<div class="cta-row">
+<a class="btn primary" href="team.html">Meet the Team</a>
+<a class="btn ghost" href="join.html">Join Us</a>
+</div>
+</div>
 
-    <!-- TEAM -->
-    <section id="team" class="team">
-      <div class="team-hero">
-        <h2>Our Crew</h2>
-        <p class="lead">OUR TEAM</p>
-      </div>
 
-      <div class="team-grid">
-        <article class="member">
-          <div class="photo"><img src="/my.jpg" alt="Shakin Ahmed"></div>
-          <h3>Shakin Ahmed</h3>
-          <div class="role">Owner of the Site</div>
-          <p class="bio">Leads the cyber & technical operations.</p>
-        </article>
+<div class="hero-visual" aria-hidden="true">
+<div class="orb"></div>
+<img src="assets/img/avatar1.jpg" alt="Team visual"/>
+</div>
+</main>
 
-        <article class="member">
-          <div class="photo"><img src="/maruf.jpg" alt="Maruf"></div>
-          <h3>Mohammad Ebena Maruf</h3>
-          <div class="role">Smoker Boy Only Ben&son</div>
-          <p class="bio">Always helps with team resources & ideas.</p>
-        </article>
 
-        <article class="member">
-          <div class="photo"><img src="/tamim.jpg" alt="Tamim"></div>
-          <h3>Tamim Hossain</h3>
-          <div class="role">Drink Seller</div>
-          <p class="bio">Manages fun & social activities.And also B.N.P Khaleda Zia's Grandson.</p>
-        </article>
+<section class="features">
+<article class="feature">
+<h3>Creative Projects</h3>
+<p>নমনীয় চিন্তা, দ্রুত ডেলিভারি এবং কাস্টম সলিউশন।</p>
+</article>
+<article class="feature">
+<h3>Community First</h3>
+<p>শেয়ারিং, mentorship এবং ওপেন-কল্যাবোরেশন।</p>
+</article>
+<article class="feature">
+<h3>Reliable</h3>
+<p>দৃঢ় সময়নিষ্ঠা ও জরুরি সাপোর্ট।</p>
+</article>
+</section>
 
-        <article class="member">
-          <div class="photo"><img src="/modhu.jpg" alt="Modhu"></div>
-          <h3>Abbraham Modhu</h3>
-          <div class="role">Tea Stall Owner</div>
-          <p class="bio">Handles support & logistics.</p>
-        </article>
-      </div>
-    </section>
 
-    <!-- JOIN US -->
-    <section id="join" class="join">
-      <div class="join-card">
-        <h2>Join Us</h2>
-        <p class="lead">If you want to join our team, you are most welcome.</p>
+<footer class="site-footer">
+<p>© <span id="year"></span> TEAM LGMSC — All rights reserved.</p>
+</footer>
 
-        <!-- 🔹 Form ID যোগ করা হয়েছে -->
-        <form class="apply-form" id="joinForm">
-          <label>Full name
-            <input name="name" required placeholder="Your Name">
-          </label>
 
-          <label>Email
-            <input name="email" type="email" required placeholder="your@gmail.com">
-          </label>
-
-          <label>Role you want to apply for
-            <select name="role">
-              <option>Science</option>
-              <option>Commerce</option>
-              <option>Humanities</option>
-            </select>
-          </label>
-
-          <label>Short bio / Why join?
-            <textarea name="bio" rows="4" required placeholder="Why you'd be a good fit"></textarea>
-          </label>
-
-          <div class="form-row">
-            <button class="btn" type="submit">Apply Now</button>
-            <button class="btn ghost" type="reset">Reset</button>
-          </div>
-        </form>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="contact">
-      <div class="contact-card">
-        <h2>Contact</h2>
-
-        <!-- 🔹 Form ID যোগ করা হয়েছে -->
-        <form class="contact-form" id="contactForm">
-          <label>Your name
-            <input name="name" required placeholder="Your Name">
-          </label>
-
-          <label>Your email
-            <input name="email" type="email" required placeholder="you@domain.com">
-          </label>
-
-          <label>Message
-            <textarea name="message" rows="5" required placeholder="Your message..."></textarea>
-          </label>
-
-          <div class="form-row">
-            <button class="btn" type="submit">Send Message</button>
-          </div>
-        </form>
-
-        <div style="margin-top:14px; color:var(--muted)">
-          <strong>Email:</strong> <span style="color:#cbd6e8">team@lgmsc.example</span><br>
-          <strong>Location:</strong> <span style="color:#cbd6e8">Dhaka, Bangladesh</span>
-        </div>
-      </div>
-    </section>
-
-    <footer class="site-footer">
-      © <span id="year"></span> TEAM LGMSC — Build By ❤️ by Shakin Ahmed
-    </footer>
-  </div>
-
-  <!-- 🔹 External JavaScript file -->
-  <script src="script.js"></script>
+<script src="assets/js/script.js"></script>
 </body>
 </html>
