@@ -21,33 +21,41 @@
   </nav>
 </header>
 
-<main class="join-hero">
-  <h1>Join Our Team</h1>
-  <p class="sub">তুমি যদি ক্রিয়েটিভ, ডেডিকেটেড ও কোলাবোরেটিভ হও — আমরা তোমাকে চাই!</p>
+  <!-- JOIN US -->
+    <section id="join" class="join">
+      <div class="join-card">
+        <h2>Join Us</h2>
+        <p class="lead">If you want to join our team, you are most welcome.</p>
 
-  <form class="apply-form" onsubmit="handleJoin(event)">
-    <label>Full name
-      <input name="name" required>
-    </label>
-    <label>Email
-      <input name="email" type="email" required>
-    </label>
-    <label>Role you want to apply for
-      <select name="role">
-        <option>Science</option>
-        <option>Commerce</option>
-        <option>Humanities</option>
-      </select>
-    </label>
-    <label>Short bio / Why join?
-      <textarea name="bio" rows="4" required></textarea>
-    </label>
-    <div class="form-row">
-      <button class="btn primary" type="submit">Apply Now</button>
-      <button class="btn ghost" type="reset">Reset</button>
-    </div>
-  </form>
-</main>
+        <!-- 🔹 Form ID যোগ করা হয়েছে -->
+        <form class="apply-form" id="joinForm">
+          <label>Full name
+            <input name="name" required placeholder="Your Name">
+          </label>
+
+          <label>Email
+            <input name="email" type="email" required placeholder="your@gamil.com">
+          </label>
+
+          <label>Which gruop you are want to apply for
+            <select name="Group">
+              <option>Science</option>
+              <option>Commerce</option>
+              <option>Humanities</option>
+            </select>
+          </label>
+
+          <label>Short bio / Why join?
+            <textarea name="bio" rows="4" required placeholder="Why you'd be a good fit"></textarea>
+          </label>
+
+          <div class="form-row">
+            <button class="btn" type="submit">Apply Now</button>
+            <button class="btn ghost" type="reset">Reset</button>
+          </div>
+        </form>
+      </div>
+    </section>
 
 <script>
 document.getElementById("year-3").textContent = new Date().getFullYear();
