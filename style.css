@@ -164,7 +164,7 @@ body.page-team {
 }
 
 .join-card {
-  max-width: 300px;
+  max-width: 600px;
   margin: 0 auto;
   background: var(--glass);
   border-radius: var(--radius);
