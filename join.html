@@ -1,189 +1,13 @@
 <!doctype html>
 <html lang="bn">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Join TEAM LGMSC</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Join TEAM LGMSC</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
-<style>
-:root {
-  --bg1: #0f2027;
-  --bg2: #203a43;
-  --bg3: #2c5364;
-  --accent: #00ffae;
-  --glass: rgba(255,255,255,0.06);
-  --radius: 14px;
-  --text: #e6eef8;
-  --muted: #9da9b8;
-}
-
-* { box-sizing: border-box; }
-body {
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  color: var(--text);
-  background: linear-gradient(120deg, var(--bg1), var(--bg2), var(--bg3));
-  background-size: 300% 300%;
-  animation: gradientMove 12s ease infinite;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-@keyframes gradientMove {
-  0%{ background-position:0% 50% }
-  50%{ background-position:100% 50% }
-  100%{ background-position:0% 50% }
-}
-
-/* HEADER */
-.site-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 8%;
-  background: rgba(255,255,255,0.03);
-  backdrop-filter: blur(10px);
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  border-bottom: 1px solid rgba(255,255,255,0.05);
-}
-.logo {
-  font-size: 22px;
-  font-weight: 700;
-  letter-spacing: 1px;
-}
-.logo span {
-  color: var(--accent);
-}
-.nav a {
-  color: var(--text);
-  text-decoration: none;
-  margin: 0 12px;
-  font-weight: 500;
-  transition: 0.3s;
-}
-.nav a:hover, .nav a.active {
-  color: var(--accent);
-}
-
-/* HERO SECTION */
-.join-hero {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 60px 20px;
-  animation: fadeUp 1s ease forwards;
-}
-@keyframes fadeUp {
-  from { opacity: 0; transform: translateY(30px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-.join-hero h1 {
-  font-size: 38px;
-  font-weight: 800;
-  background: linear-gradient(90deg, var(--accent), #00b4ff);
-  -webkit-background-clip: text;
-  color: transparent;
-}
-.join-hero .sub {
-  max-width: 500px;
-  color: var(--muted);
-  margin-top: 10px;
-  font-size: 15px;
-}
-
-/* FORM */
-.apply-form {
-  margin-top: 40px;
-  width: 100%;
-  max-width: 520px;
-  background: var(--glass);
-  padding: 30px;
-  border-radius: var(--radius);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 10px 35px rgba(0,0,0,0.4);
-  animation: float 4s ease-in-out infinite alternate;
-}
-@keyframes float {
-  from { transform: translateY(0px); }
-  to { transform: translateY(-6px); }
-}
-
-.apply-form label {
-  display: block;
-  text-align: left;
-  font-weight: 600;
-  margin-bottom: 6px;
-  font-size: 14px;
-  color: var(--text);
-}
-.apply-form input,
-.apply-form select,
-.apply-form textarea {
-  width: 100%;
-  padding: 10px 12px;
-  margin-bottom: 18px;
-  border-radius: 10px;
-  border: none;
-  background: rgba(255,255,255,0.08);
-  color: var(--text);
-  font-size: 14px;
-  outline: none;
-  transition: all 0.3s ease;
-}
-.apply-form input:focus,
-.apply-form select:focus,
-.apply-form textarea:focus {
-  background: rgba(255,255,255,0.15);
-  box-shadow: 0 0 0 2px var(--accent);
-}
-
-.form-row {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-}
-
-.btn {
-  flex: 1;
-  padding: 10px 16px;
-  font-weight: 600;
-  border-radius: 10px;
-  border: none;
-  cursor: pointer;
-  transition: 0.3s ease;
-}
-.btn.primary {
-  background: linear-gradient(90deg, var(--accent), #00b4ff);
-  color: #081022;
-}
-.btn.primary:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 0 20px var(--accent);
-}
-.btn.ghost {
-  background: transparent;
-  border: 1px solid rgba(255,255,255,0.2);
-  color: var(--text);
-}
-.btn.ghost:hover {
-  background: rgba(255,255,255,0.08);
-}
-
-/* FOOTER */
-.site-footer {
-  text-align: center;
-  padding: 20px;
-  color: var(--muted);
-  font-size: 14px;
-  border-top: 1px solid rgba(255,255,255,0.05);
-}
-</style>
+  <!-- External CSS Link -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -210,10 +34,9 @@ body {
     </label>
     <label>Role you want to apply for
       <select name="role">
-        <option>Developer</option>
-        <option>Designer</option>
-        <option>Content</option>
-        <option>Support</option>
+        <option>Science</option>
+        <option>Commerce</option>
+        <option>Humanities</option>
       </select>
     </label>
     <label>Short bio / Why join?
@@ -235,7 +58,7 @@ document.getElementById("year-3").textContent = new Date().getFullYear();
 
 function handleJoin(e){
   e.preventDefault();
-  alert("✅ Application submitted successfully! আমরা খুব শীঘ্রই যোগাযোগ করবো।");
+  alert("✅ Application submitted successfully!");
   e.target.reset();
 }
 </script>

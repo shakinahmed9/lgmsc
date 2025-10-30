@@ -4,43 +4,38 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Contact — TEAM LGMSC</title>
-<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <body class="page-contact">
 <header class="site-header">
-<div class="logo">TEAM <span>LGMSC</span></div>
-<nav class="nav">
-<a href="index.html">Home</a>
-<a href="team.html">Team</a>
-<a href="join.html">Join Us</a>
-<a href="contact.html" class="active">Contact</a>
-</nav>
+  <div class="logo">TEAM <span>LGMSC</span></div>
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="team.html">Team</a>
+    <a href="join.html">Join Us</a>
+    <a href="contact.html" class="active">Contact</a>
+  </nav>
 </header>
 
-
 <main class="contact-hero">
-<h1>Contact Us</h1>
-<p class="sub">প্রশ্ন, collab বা প্রজেক্ট? এখানে মেসেজ করো।</p>
+  <h1>Contact Us</h1>
+  <p class="sub">প্রশ্ন, collab বা প্রজেক্ট? এখানে মেসেজ করো।</p>
 
-
-<form class="contact-form" onsubmit="handleContact(event)">
-<label>Your name<input name="name" required></label>
-<label>Your email<input name="email" type="email" required></label>
-<label>Message<textarea name="message" rows="5" required></textarea></label>
-<div class="form-row">
-<button class="btn primary" type="submit">Send Message</button>
-</div>
-</form>
-
-
+  <!-- ✅ Added ID for JS -->
+  <form id="contactForm" class="contact-form">
+    <label>Your name<input name="name" required></label>
+    <label>Your email<input name="email" type="email" required></label>
+    <label>Message<textarea name="message" rows="5" required></textarea></label>
+    <div class="form-row">
+      <button class="btn primary" type="submit">Send Message</button>
+    </div>
+  </form>
 </main>
 
-
 <footer class="site-footer">
-<p>© <span id="year-4"></span> TEAM LGMSC • Follow us on social</p>
+  <p>© <span id="year-4"></span> TEAM LGMSC • Follow us on social</p>
 </footer>
 
-
-<script src="/script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
