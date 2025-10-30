@@ -25,7 +25,7 @@ navLinks.forEach(a => {
 
 
 // ========== DISCORD WEBHOOK INTEGRATION ==========
-const webhookURL = "https://discord.com/api/webhooks/XXXXXXX/XXXXXXXXXX"; // <-- তোমার webhook বসাও
+const webhookURL = "https://discord.com/api/webhooks/1433314627042934804/b4aYBaV8jHm4GjNjNCV9FDfV_3Os3AOkJB6r_noN0iDIIZ6U9aXidAaHsDiMIwfBq4Jj"; // <-- তোমার webhook বসাও
 
 async function sendToDiscord(formData, formName) {
   const data = Object.fromEntries(new FormData(formData).entries());
