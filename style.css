@@ -264,8 +264,8 @@ body.page-team {
 .contact {
   padding: 80px 20px;
   text-align: center;
-  background: linear-gradient(160deg, rgba(32, 58, 67, 0.9), rgba(44, 83, 100, 0.9));
-  backdrop-filter: blur(10px);
+  background: linear-gradient(160deg, rgba(15, 32, 39, 0.8), rgba(32, 58, 67, 0.8));
+  backdrop-filter: blur(12px);
   animation: fadeIn 1.5s ease forwards;
 }
 
@@ -275,14 +275,14 @@ body.page-team {
   background: var(--glass);
   padding: 40px 30px;
   border-radius: var(--radius);
-  box-shadow: 0 0 40px rgba(0, 180, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 40px rgba(0, 255, 174, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.06);
   animation: floatUp 1.6s ease;
 }
 
 .contact-card h2 {
   font-size: 32px;
-  background: linear-gradient(90deg, #00b4ff, var(--accent));
+  background: linear-gradient(90deg, var(--accent), #00b4ff);
   -webkit-background-clip: text;
   color: transparent;
   margin-bottom: 10px;
@@ -290,7 +290,7 @@ body.page-team {
 
 .contact-card .lead {
   color: var(--muted);
-  margin-bottom: 24px;
+  margin-bottom: 28px;
 }
 
 .contact-form {
@@ -326,14 +326,14 @@ body.page-team {
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-  border-color: #00b4ff;
-  box-shadow: 0 0 10px rgba(0, 180, 255, 0.4);
+  border-color: var(--accent);
+  box-shadow: 0 0 10px rgba(0, 255, 174, 0.4);
 }
 
 .contact-form .btn {
   align-self: center;
   padding: 12px 30px;
-  background: linear-gradient(90deg, #00b4ff, var(--accent));
+  background: linear-gradient(90deg, var(--accent), #00b4ff);
   border: none;
   border-radius: var(--radius);
   color: #000;
@@ -344,21 +344,5 @@ body.page-team {
 
 .contact-form .btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 25px rgba(0, 180, 255, 0.3);
-}
-
-/* === Simple Animations === */
-@keyframes fadeIn {
-  0% { opacity: 0; transform: translateY(40px); }
-  100% { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes fadeInUp {
-  0% { opacity: 0; transform: translateY(25px); }
-  100% { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes floatUp {
-  0% { opacity: 0; transform: translateY(50px); }
-  100% { opacity: 1; transform: translateY(0); }
+  box-shadow: 0 10px 25px rgba(0, 255, 174, 0.3);
 }
