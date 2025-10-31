@@ -713,3 +713,30 @@ contact {
     max-width: 650px;
   }
 }
+
+/* === Footer Position & Style === */
+.center-footer {
+  margin-top: auto;           /* footer কে সবসময় নিচে ঠেলে দেয় */
+  padding: 16px 0;
+  color: var(--text);
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.03);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Center align */
+.center-footer.center {
+  text-align: center;
+}
+
+/* Left align */
+.center-footer.left {
+  text-align: left;
+  padding-left: 8%;
+}
+
+/* Right align */
+.center-footer.right {
+  text-align: right;
+  padding-right: 8%;
+}
