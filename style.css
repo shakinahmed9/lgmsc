@@ -185,6 +185,12 @@ body.page-home {
   color: #000;
 }
 
+.cta-row {
+  margin-top: 8px; /* আগে default থাকলে বেশি হতে পারে, কমিয়ে দিলে টাইট হবে */
+  display: flex;
+  gap: 12px;
+}
+
 /* === Team Page === */
 body.page-team {
   background: linear-gradient(180deg, #041b2b, #071625);
