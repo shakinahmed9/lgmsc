@@ -192,6 +192,11 @@ body.page-home {
 
 /* === CTA Button Row (Meet Team + Join Us) === */
 .cta-row {
+  margin-top: 8px; /* আগে default থাকলে বেশি হতে পারে, কমিয়ে দিলে টাইট হবে */
+  display: flex;
+  gap: 10px;
+}
+.cta-row {
   margin-top: 16px;
   display: flex;
   justify-content: center; /* মাঝখানে রাখে */
