@@ -188,7 +188,7 @@ body.page-home {
 .cta-row {
   margin-top: 8px; /* আগে default থাকলে বেশি হতে পারে, কমিয়ে দিলে টাইট হবে */
   display: flex;
-  gap: 12px;
+  gap: 10px;
 }
 
 /* === Team Page === */
