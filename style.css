@@ -300,10 +300,10 @@ body.page-team {
 
   /* Neon glow effect */
   text-shadow:
-    0 0 5px #00ff22,
-    0 0 10px #00ff22,
-    0 0 20px #00ff22,
-    0 0 40px #00ff22,
+    0 0 5px #00ff95,
+    0 0 10px #00ff95,
+    0 0 20px #00ff95,
+    0 0 40px #00ff95,
     0 0 80px #00ff22;
 
   animation: neonGlow 1.5s ease-in-out infinite alternate;
@@ -312,18 +312,18 @@ body.page-team {
 @keyframes neonGlow {
   0% {
     text-shadow:
-      0 0 5px #00ff22,
-      0 0 10px #00ff22,
-      0 0 20px #00ff22,
-      0 0 40px #00ff22,
+      0 0 5px #00ff95,
+      0 0 10px #00ff95,
+      0 0 20px #00ff95,
+      0 0 40px #00ff95,
       0 0 80px #00ff22;
   }
   100% {
     text-shadow:
-      0 0 10px #00ff22,
-      0 0 20px #00ff22,
-      0 0 30px #00ff22,
-      0 0 50px #00ff22,
+      0 0 10px #00ff95,
+      0 0 20px #00ff95,
+      0 0 30px #00ff95,
+      0 0 50px #00ff95,
       0 0 100px #00ff22;
   }
 }
