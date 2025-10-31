@@ -185,6 +185,11 @@ body.page-home {
   color: #000;
 }
 
+/* Remove underline from buttons */
+.hero-inner a {
+  text-decoration: none;
+}
+
 .cta-row {
   margin-top: 8px; /* আগে default থাকলে বেশি হতে পারে, কমিয়ে দিলে টাইট হবে */
   display: flex;
