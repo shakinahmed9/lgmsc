@@ -285,19 +285,19 @@ body.page-team {
   letter-spacing: 1px;
 }
 
-/* owner Section */
-.owner-section {
+/* Leader Section */
+.leader-section {
   text-align: center;
   margin: 60px auto;
 }
 
-.owner-section h2 {
-  font-size: 30px;
-  color: rgb(46, 253, 74);
+.leader-section h2 {
+  font-size: 26px;
+  color: #0ef;
   margin-bottom: 25px;
 }
 
-.owner-card {
+.leader-card {
   display: inline-block;
   background: rgba(255, 255, 255, 0.08);
   border: 1px solid rgba(255, 255, 255, 0.12);
@@ -308,12 +308,12 @@ body.page-team {
   transition: all 0.4s ease;
 }
 
-.owner-card:hover {
+.leader-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 0 25px rgba(0, 255, 255, 0.4);
 }
 
-.owner-card img {
+.leader-card img {
   width: 150px;
   height: 150px;
   border-radius: 50%;
@@ -322,18 +322,18 @@ body.page-team {
   box-shadow: 0 0 10px rgba(0,255,255,0.5);
 }
 
-.owner-card h4 {
+.leader-card h4 {
   margin: 10px 0 5px;
   color: #fff;
   font-size: 20px;
 }
 
-.owner-card .role {
+.leader-card .role {
   color: #0ef;
   font-size: 14px;
 }
 
-.owner-card .bio {
+.leader-card .bio {
   color: #bbb;
   font-size: 13px;
 }
@@ -405,7 +405,7 @@ body.page-team {
     font-size: 32px;
   }
 
-  .owner-card img {
+  .leader-card img {
     width: 120px;
     height: 120px;
   }
