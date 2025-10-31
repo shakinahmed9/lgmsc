@@ -192,38 +192,31 @@ body.page-home {
   text-decoration: none;
 }
 
-/* === CTA Button Row (Meet Team + Join Us) === */
+/* === CTA Button Row === */
 .cta-row {
-  margin-top: 8px; /* আগে default থাকলে বেশি হতে পারে, কমিয়ে দিলে টাইট হবে */
+  margin-top: 8px;
   display: flex;
   gap: 10px;
 }
-
-/* মোবাইলেও পাশাপাশি রাখার জন্য */
 @media (max-width: 600px) {
   .cta-row {
     justify-content: center;
     gap: 10px;
   }
-
   .cta-row .btn {
-    flex: 0 1 auto; /* যাতে পাশাপাশি থাকে */
+    flex: 0 1 auto;
     min-width: 120px;
   }
 }
-
-/* ট্যাবলেট ভিউ */
 @media (min-width: 601px) and (max-width: 992px) {
   .cta-row {
     justify-content: center;
   }
 }
 
-
-//* ==========================
+/* ==========================
    TEAM PAGE STYLING (Updated)
    ========================== */
-
 body.page-team {
   font-family: 'Poppins', sans-serif;
   margin: 0;
@@ -248,11 +241,9 @@ body.page-team {
   font-size: 22px;
   color: #0ef;
 }
-
 .logo span {
   color: #fff;
 }
-
 .nav a {
   color: #bbb;
   margin-left: 20px;
@@ -260,7 +251,6 @@ body.page-team {
   transition: 0.3s;
   font-weight: 500;
 }
-
 .nav a:hover,
 .nav a.active {
   color: #0ef;
@@ -271,14 +261,12 @@ body.page-team {
   text-align: center;
   padding: 70px 20px 40px;
 }
-
 .team-hero h1 {
   font-size: 42px;
   margin-bottom: 10px;
   color: #0ef;
   text-shadow: 0 0 10px rgba(0,255,255,0.5);
 }
-
 .team-hero .sub {
   color: #ccc;
   font-size: 16px;
@@ -290,13 +278,11 @@ body.page-team {
   text-align: center;
   margin: 60px auto;
 }
-
 .owner-section h2 {
   font-size: 30px;
   color: rgb(0, 255, 85);
   margin-bottom: 25px;
 }
-
 .owner-card {
   display: inline-block;
   background: rgba(255, 255, 255, 0.08);
@@ -307,12 +293,10 @@ body.page-team {
   box-shadow: 0 0 20px rgba(0, 255, 255, 0.15);
   transition: all 0.4s ease;
 }
-
 .owner-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 0 25px rgba(0, 255, 255, 0.4);
 }
-
 .owner-card img {
   width: 150px;
   height: 150px;
@@ -321,18 +305,15 @@ body.page-team {
   margin-bottom: 15px;
   box-shadow: 0 0 10px rgba(0,255,255,0.5);
 }
-
 .owner-card h4 {
   margin: 10px 0 5px;
   color: #fff;
   font-size: 20px;
 }
-
 .owner-card .role {
   color: #0ef;
   font-size: 14px;
 }
-
 .owner-card .bio {
   color: #bbb;
   font-size: 13px;
@@ -346,7 +327,6 @@ body.page-team {
   margin-top: 60px;
   margin-bottom: 30px;
 }
-
 .team-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -355,7 +335,6 @@ body.page-team {
   margin: 0 auto;
   padding: 0 20px 60px;
 }
-
 .member {
   background: rgba(255, 255, 255, 0.07);
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -364,12 +343,10 @@ body.page-team {
   padding: 25px;
   transition: all 0.4s ease;
 }
-
 .member:hover {
   transform: translateY(-5px);
   box-shadow: 0 0 25px rgba(0,255,255,0.3);
 }
-
 .member img {
   width: 120px;
   height: 120px;
@@ -378,39 +355,31 @@ body.page-team {
   margin-bottom: 12px;
   box-shadow: 0 0 10px rgba(0,255,255,0.4);
 }
-
 .member h4 {
   color: #fff;
   margin: 8px 0 3px;
 }
-
 .member .role {
   color: #0ef;
   font-size: 14px;
 }
-
 .member .bio {
   color: #bbb;
   font-size: 13px;
 }
-
-/* Responsive */
 @media (max-width: 600px) {
   .site-header {
     flex-direction: column;
     gap: 10px;
   }
-
   .team-hero h1 {
     font-size: 32px;
   }
-
   .owner-card img {
     width: 120px;
     height: 120px;
   }
 }
-
 
 /* === Join Us Section === */
 .join {
@@ -420,7 +389,6 @@ body.page-team {
   text-align: center;
   animation: fadeIn 1.5s ease forwards;
 }
-
 .join-card {
   max-width: 600px;
   margin: 0 auto;
@@ -431,7 +399,6 @@ body.page-team {
   box-shadow: 0 0 40px rgba(0, 255, 174, 0.1);
   animation: floatUp 1.6s ease;
 }
-
 .join-card h2 {
   font-size: 32px;
   background: linear-gradient(90deg, var(--accent), #00b4ff);
@@ -439,18 +406,15 @@ body.page-team {
   color: transparent;
   margin-bottom: 10px;
 }
-
 .join-card .lead {
   color: var(--muted);
   margin-bottom: 28px;
 }
-
 .apply-form {
   display: flex;
   flex-direction: column;
   gap: 18px;
 }
-
 .apply-form label {
   display: flex;
   flex-direction: column;
@@ -461,7 +425,6 @@ body.page-team {
   text-align: left;
   animation: fadeInUp 1.2s ease;
 }
-
 .apply-form input,
 .apply-form select,
 .apply-form textarea {
@@ -476,21 +439,18 @@ body.page-team {
   outline: none;
   transition: all 0.3s ease;
 }
-
 .apply-form input:focus,
 .apply-form select:focus,
 .apply-form textarea:focus {
   border-color: var(--accent);
   box-shadow: 0 0 10px rgba(0, 255, 174, 0.4);
 }
-
 .apply-form .form-row {
   display: flex;
   gap: 10px;
   justify-content: center;
   margin-top: 10px;
 }
-
 .apply-form .btn {
   padding: 12px 28px;
   border-radius: var(--radius);
@@ -501,18 +461,15 @@ body.page-team {
   color: #000;
   transition: transform 0.3s, box-shadow 0.3s;
 }
-
 .apply-form .btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 25px rgba(0, 255, 174, 0.3);
 }
-
 .apply-form .btn.ghost {
   background: transparent;
   border: 1px solid var(--accent);
   color: var(--accent);
 }
-
 .apply-form .btn.ghost:hover {
   background: var(--accent);
   color: #000;
@@ -527,8 +484,6 @@ contact {
   backdrop-filter: blur(14px);
   animation: fadeIn 1.5s ease forwards;
 }
-
-/* === Contact Card === */
 .contact-card {
   max-width: 600px;
   margin: 0 auto;
@@ -540,8 +495,6 @@ contact {
   animation: floatUp 1.4s ease;
   backdrop-filter: blur(20px);
 }
-
-/* === Heading & Text === */
 .contact-card h2 {
   font-size: 34px;
   background: linear-gradient(90deg, var(--accent), #00b4ff);
@@ -549,27 +502,22 @@ contact {
   color: transparent;
   margin-bottom: 12px;
 }
-
 .contact-card .lead {
   color: var(--muted);
   font-size: 16px;
   margin-bottom: 32px;
 }
-
-/* === Form === */
 .contact-form {
   display: flex;
   flex-direction: column;
   gap: 18px;
 }
-
 .contact-form label {
   text-align: left;
   color: var(--muted);
   font-weight: 600;
   font-size: 14px;
 }
-
 .contact-form input,
 .contact-form textarea {
   width: 100%;
@@ -582,13 +530,11 @@ contact {
   outline: none;
   transition: all 0.3s ease;
 }
-
 .contact-form input:focus,
 .contact-form textarea:focus {
   border-color: var(--accent);
   box-shadow: 0 0 15px rgba(0, 255, 174, 0.4);
 }
-
 .contact-form .btn {
   margin-top: 10px;
   align-self: center;
@@ -601,57 +547,45 @@ contact {
   cursor: pointer;
   transition: transform 0.3s, box-shadow 0.3s;
 }
-
 .contact-form .btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 25px rgba(0, 255, 174, 0.3);
 }
 
-/* === Responsive Layout Fix (Mobile + Tablet Friendly) === */
-
-/* 🟢 মোবাইল (max-width: 600px) */
+/* === Responsive Layout Fix === */
 @media (max-width: 600px) {
-  body {
-    overflow-x: hidden;
-  }
-
+  body { overflow-x: hidden; }
   .site-header {
     flex-direction: column;
     text-align: center;
     padding: 12px 5%;
   }
-
   .logo {
     font-size: 20px;
     margin-bottom: 8px;
   }
-
   .nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 8px;
   }
-
   .nav a {
     margin: 0;
     padding: 10px 20px;
     font-size: 14px;
     display: inline-block;
   }
-
   .home-hero {
     grid-template-columns: 1fr;
     padding: 150px 16px;
     text-align: center;
   }
-
   .hero-visual img {
     width: 100%;
     max-width: 550px;
     margin: 0 auto;
   }
-
   .join-card,
   .contact-card {
     width: 100%;
@@ -659,71 +593,54 @@ contact {
     padding: 30px 20px;
     margin: 0 auto;
   }
-
   .join h2,
   .contact-card h2 {
     font-size: 26px;
   }
-
   .apply-form .btn,
   .contact-form .btn {
     width: 100%;
   }
-
   .team-grid {
     grid-template-columns: 1fr 1fr;
   }
-
   .member img {
     width: 100px;
     height: 100px;
   }
 }
-
-/* 🟡 ট্যাবলেট (min-width: 601px and max-width: 992px) */
 @media (min-width: 601px) and (max-width: 992px) {
   .home-hero {
     grid-template-columns: 1fr 1fr;
     gap: 24px;
     padding: 40px 30px;
   }
-
   .join-card,
   .contact-card {
     max-width: 80%;
     padding: 35px 25px;
   }
-
   .team-grid {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }
-
   .nav a {
     font-size: 15px;
     padding: 10px 16px;
   }
 }
-
-/* 🖥️ বড় স্ক্রিন (Desktop Enhancement) */
 @media (min-width: 993px) {
-  .home-hero {
-    max-width: 1100px;
-  }
-
+  .home-hero { max-width: 1100px; }
   .join-card,
-  .contact-card {
-    max-width: 650px;
-  }
+  .contact-card { max-width: 650px; }
 }
 
-/* === Footer (Always bottom center) === */
+/* === Footer === */
 .center-footer {
-  position: fixed;           /* স্ক্রিনে সবসময় থাকবে */
-  bottom: 0;                 /* একদম নিচে বসাবে */
-  left: 50%;                 /* মাঝখানে নিয়ে যাবে */
-  transform: translateX(-50%); /* একদম নিখুঁত center alignment */
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
   width: 100%;
-  max-width: 100%;
   padding: 14px 0;
   text-align: center;
   font-size: 14px;
@@ -733,9 +650,44 @@ contact {
   color: var(--text);
   z-index: 999;
 }
+body { padding-bottom: 60px; }
 
-/* Responsive view এ যেন টেক্সট overlap না করে */
-body {
-  padding-bottom: 60px; /* Footer height এর জায়গা রাখে */
+/* === ✅ FIXED: Join Us & Contact Size & Spacing === */
+.join-card,
+.contact-card {
+  max-width: 650px;
+  margin: 60px auto;
+  padding: 40px 30px;
+  border-radius: var(--radius);
+  box-sizing: border-box;
 }
-
+contact, .contact-section {
+  display: block;
+  margin-top: 80px;
+  padding-top: 40px;
+}
+@media (max-width: 600px) {
+  .join,
+  contact,
+  .contact-section {
+    padding: 60px 20px;
+    margin-top: 40px;
+  }
+  .join-card,
+  .contact-card {
+    max-width: 95%;
+    width: 100%;
+    margin: 0 auto 60px;
+    padding: 30px 20px;
+  }
+  .site-header { margin-bottom: 20px; }
+  contact, .contact-section { margin-top: 80px; }
+}
+@media (min-width: 601px) and (max-width: 992px) {
+  .join-card,
+  .contact-card {
+    max-width: 80%;
+    margin: 60px auto;
+  }
+  contact, .contact-section { margin-top: 90px; }
+}
