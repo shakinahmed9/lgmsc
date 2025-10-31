@@ -115,7 +115,7 @@ body.page-home {
 .hero-inner {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 8px;
 }
 
 .hero-inner label {
