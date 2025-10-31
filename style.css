@@ -714,29 +714,26 @@ contact {
   }
 }
 
-/* === Footer Position & Style === */
+/* === Footer (Always bottom center) === */
 .center-footer {
-  margin-top: auto;           /* footer কে সবসময় নিচে ঠেলে দেয় */
-  padding: 16px 0;
-  color: var(--text);
+  position: fixed;           /* স্ক্রিনে সবসময় থাকবে */
+  bottom: 0;                 /* একদম নিচে বসাবে */
+  left: 50%;                 /* মাঝখানে নিয়ে যাবে */
+  transform: translateX(-50%); /* একদম নিখুঁত center alignment */
+  width: 100%;
+  max-width: 100%;
+  padding: 14px 0;
+  text-align: center;
   font-size: 14px;
   background: rgba(255, 255, 255, 0.03);
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(8px);
+  color: var(--text);
+  z-index: 999;
 }
 
-/* Center align */
-.center-footer.center {
-  text-align: center;
+/* Responsive view এ যেন টেক্সট overlap না করে */
+body {
+  padding-bottom: 60px; /* Footer height এর জায়গা রাখে */
 }
 
-/* Left align */
-.center-footer.left {
-  text-align: left;
-  padding-left: 8%;
-}
-
-/* Right align */
-.center-footer.right {
-  text-align: right;
-  padding-right: 8%;
-}
