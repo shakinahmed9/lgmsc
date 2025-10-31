@@ -640,13 +640,13 @@ contact {
 
   .home-hero {
     grid-template-columns: 1fr;
-    padding: 30px 16px;
+    padding: 50px 16px;
     text-align: center;
   }
 
   .hero-visual img {
     width: 100%;
-    max-width: 450px;
+    max-width: 550px;
     margin: 0 auto;
   }
 
