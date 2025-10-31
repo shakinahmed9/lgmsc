@@ -112,6 +112,79 @@ body.page-home {
   100% { transform: translateY(0); }
 }
 
+.hero-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.hero-inner label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 600;
+  text-align: left;
+  animation: fadeInUp 1.2s ease;
+}
+
+.hero-inner input,
+.hero-inner select,
+.hero-inner textarea {
+  width: 100%;
+  padding: 12px 14px;
+  margin-top: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text);
+  font-size: 15px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.hero-inner input:focus,
+.hero-inner select:focus,
+.hero-inner textarea:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 10px rgba(0, 255, 174, 0.4);
+}
+
+.hero-inner .form-row {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.hero-inner .btn {
+  padding: 12px 28px;
+  border-radius: var(--radius);
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(90deg, var(--accent), #00b4ff);
+  color: #000;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.hero-inner .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 255, 174, 0.3);
+}
+
+.hero-inner .btn.ghost {
+  background: transparent;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+}
+
+.hero-inner .btn.ghost:hover {
+  background: var(--accent);
+  color: #000;
+}
+
 /* === Team Page === */
 body.page-team {
   background: linear-gradient(180deg, #041b2b, #071625);
