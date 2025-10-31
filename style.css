@@ -80,9 +80,9 @@ body.page-home {
 .home-hero {
   display: grid;
   grid-template-columns: 1fr 420px;
-  gap: 20px;
+  gap: 30px;
   align-items:center;
-  padding: 60px;
+  padding: 40px;
   max-width: 1100px;
   margin: 40px auto;
 }
