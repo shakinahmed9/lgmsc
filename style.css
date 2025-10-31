@@ -640,7 +640,7 @@ contact {
 
   .home-hero {
     grid-template-columns: 1fr;
-    padding: 80px 16px;
+    padding: 100px 16px;
     text-align: center;
   }
 
