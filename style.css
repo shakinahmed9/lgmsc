@@ -295,13 +295,11 @@ body.page-team {
   font-size: 28px;
   color: rgb(0, 255, 34);
   margin-bottom: 25px;
-    
-  /* Text stroke / outline */
-  -webkit-text-stroke: 2px black; /* Stroke width and color */
-  text-stroke: 2px black; /* Fallback for some browsers */
-  
-  /* Optional for better visibility */
   font-weight: bold;
+
+  /* Text stroke / outline */
+  -webkit-text-stroke: 2px black; /* Outline color */
+  -webkit-text-fill-color: rgb(0, 255, 34); /* Inside fill color */
 }
 
 .owner-card {
