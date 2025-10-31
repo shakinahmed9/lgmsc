@@ -112,62 +112,6 @@ body.page-home {
   100% { transform: translateY(0); }
 }
 
-/* === CTA BUTTON ANIMATIONS === */
-.fancy-buttons {
-  display: flex;
-  gap: 18px;
-  margin-top: 30px;
-}
-
-/* Common glow button base */
-.btn.glow {
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* Glowing hover animation */
-.btn.glow::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(120deg, var(--accent), #00b4ff, #00ffaa, #ff0080);
-  background-size: 300% 300%;
-  border-radius: inherit;
-  filter: blur(10px);
-  opacity: 0;
-  z-index: -1;
-  transition: opacity 0.4s ease, background-position 2s ease;
-}
-
-.btn.glow:hover::before {
-  opacity: 1;
-  animation: glowMove 3s linear infinite;
-}
-
-.btn.glow:hover {
-  transform: translateY(-4px) scale(1.05);
-  box-shadow: 0 0 25px rgba(0, 255, 174, 0.3);
-}
-
-/* Animated gradient movement */
-@keyframes glowMove {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-/* Optional text flicker effect */
-.btn.glow:hover span {
-  animation: flicker 1s infinite alternate;
-}
-
-@keyframes flicker {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.85; text-shadow: 0 0 10px var(--accent); }
-}
-
 /* === Team Page === */
 body.page-team {
   background: linear-gradient(180deg, #041b2b, #071625);
