@@ -296,10 +296,6 @@ body.page-team {
   color: rgb(0, 255, 34);
   margin-bottom: 25px;
   font-weight: bold;
-
-  /* Text stroke / outline */
-  -webkit-text-stroke: 1px black; /* Outline color */
-  -webkit-text-fill-color: rgb(0, 255, 34); /* Inside fill color */
 }
 
 .owner-card {
