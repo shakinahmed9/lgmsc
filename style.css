@@ -635,14 +635,14 @@ contact {
 
   .nav a {
     margin: 0;
-    padding: 10px 30px;
+    padding: 10px 20px;
     font-size: 14px;
     display: inline-block;
   }
 
   .home-hero {
     grid-template-columns: 1fr;
-    padding: 180px 16px;
+    padding: 150px 16px;
     text-align: center;
   }
 
