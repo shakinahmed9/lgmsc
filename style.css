@@ -742,8 +742,8 @@ body {
 /* === ✅ FIXED: Join Us & Contact Size & Spacing === */
 .join-card,
 .contact-card {
-  max-width: 650px;
-  margin: 60px auto;
+  max-width: 600px;
+  margin: 80px auto;
   padding: 40px 30px;
   border-radius: var(--radius);
   box-sizing: border-box;
