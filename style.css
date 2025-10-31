@@ -82,7 +82,7 @@ body.page-home {
   grid-template-columns: 1fr 420px;
   gap: 30px;
   align-items:center;
-  padding: 40px;
+  padding: 20px;
   max-width: 1100px;
   margin: 40px auto;
 }
