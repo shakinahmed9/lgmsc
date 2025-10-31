@@ -196,24 +196,6 @@ body.page-home {
   display: flex;
   gap: 10px;
 }
-.cta-row {
-  margin-top: 16px;
-  display: flex;
-  justify-content: center; /* মাঝখানে রাখে */
-  align-items: center;      /* উল্লম্বভাবে মাঝখানে রাখে */
-  gap: 12px;                /* দুই বাটনের মধ্যে ফাঁকা জায়গা */
-  flex-wrap: nowrap;        /* সব স্ক্রিনে পাশাপাশি থাকবে */
-  text-align: center;
-}
-
-.cta-row .btn {
-  min-width: 140px;
-  text-align: center;
-  padding: 12px 28px;
-  font-weight: 600;
-  border-radius: var(--radius);
-  transition: transform 0.3s, box-shadow 0.3s;
-}
 
 /* মোবাইলেও পাশাপাশি রাখার জন্য */
 @media (max-width: 600px) {
