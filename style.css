@@ -295,22 +295,6 @@ body.page-team {
   font-size: 26px;
   color: rgb(0, 255, 34);
   margin-bottom: 25px;
-  padding: 10px 20px;
-  border-radius: 10px;
-
-  /* Glowing background animation */
-  background: linear-gradient(270deg, #00ff22, #00ffff, #ff00ff, #ff0000);
-  background-size: 800% 800%;
-  animation: glowAnimation 8s ease infinite;
-
-  /* Optional: text shadow for extra glow effect */
-  text-shadow: 0 0 10px #00ff22, 0 0 20px #00ff22, 0 0 30px #00ff22;
-}
-
-@keyframes glowAnimation {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
 }
 
 .owner-card {
