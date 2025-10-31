@@ -89,11 +89,13 @@ body.page-home {
 .title {
   font-size: 30px;
   margin: 0 0 12px;
+  animation: float 6s ease-in-out infinite;
 }
 .title span {
   background: linear-gradient(90deg, var(--accent), #00b4ff);
   -webkit-background-clip: text;
   color: transparent;
+  animation: float 6s ease-in-out infinite;
 }
 .lead {
   color: var(--muted);
