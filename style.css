@@ -295,6 +295,37 @@ body.page-team {
   font-size: 26px;
   color: rgb(0, 255, 34);
   margin-bottom: 25px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  /* Neon glow effect */
+  text-shadow:
+    0 0 5px #00ff22,
+    0 0 10px #00ff22,
+    0 0 20px #00ff22,
+    0 0 40px #00ff22,
+    0 0 80px #00ff22;
+
+  animation: neonGlow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes neonGlow {
+  0% {
+    text-shadow:
+      0 0 5px #00ff22,
+      0 0 10px #00ff22,
+      0 0 20px #00ff22,
+      0 0 40px #00ff22,
+      0 0 80px #00ff22;
+  }
+  100% {
+    text-shadow:
+      0 0 10px #00ff22,
+      0 0 20px #00ff22,
+      0 0 30px #00ff22,
+      0 0 50px #00ff22,
+      0 0 100px #00ff22;
+  }
 }
 
 .owner-card {
