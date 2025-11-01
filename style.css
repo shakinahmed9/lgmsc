@@ -778,3 +778,146 @@ contact, .contact-section {
   }
   contact, .contact-section { margin-top: 90px; }
 }
+/* === 🔧 FIX: Navbar & Section Gap Balancing === */
+
+/* সব পেজে navbar এর নিচে সমান gap রাখো */
+main, .join, contact, .contact-section {
+  margin-top: 100px !important;
+}
+
+/* Navbar এ consistent shadow ও background fix */
+.site-header {
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(8px);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Join Us এবং Contact card spacing সমান করা */
+.join-card, .contact-card {
+  margin: 80px auto !important;
+  padding: 40px 30px;
+}
+
+/* মোবাইল responsive fix */
+@media (max-width: 600px) {
+  main, .join, contact, .contact-section {
+    margin-top: 80px !important;
+  }
+  .join-card, .contact-card {
+    margin: 60px auto !important;
+    padding: 30px 20px;
+  }
+}
+
+/* Desktop view এ gap balance রাখে */
+@media (min-width: 993px) {
+  main, .join, contact, .contact-section {
+    margin-top: 110px !important;
+  }
+}
+/* === 🌍 UNIVERSAL RESPONSIVE FIX (All Devices) === */
+
+/* Consistent Navbar Style for All Pages */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 8%;
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Equal top spacing for all main sections (below navbar) */
+main, .home-hero, .join, contact, .contact-section, .team-hero, .owner-section {
+  margin-top: 100px !important;
+}
+
+/* Join & Contact cards spacing fix */
+.join-card, .contact-card {
+  margin: 80px auto !important;
+  padding: 40px 30px;
+  border-radius: var(--radius);
+  box-sizing: border-box;
+}
+
+/* Fix footer overlap issue */
+body {
+  padding-bottom: 70px; /* Footer height space */
+  overflow-x: hidden;
+}
+
+/* === 📱 Mobile (max 600px) === */
+@media (max-width: 600px) {
+  .site-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 6px;
+    padding: 12px 6%;
+  }
+
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+  }
+
+  main, .home-hero, .join, contact, .contact-section {
+    margin-top: 80px !important;
+  }
+
+  .join-card, .contact-card {
+    margin: 50px auto !important;
+    padding: 28px 18px;
+    width: 95%;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .member img {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+/* === 💻 Tablet (601px–992px) === */
+@media (min-width: 601px) and (max-width: 992px) {
+  main, .join, contact, .contact-section {
+    margin-top: 90px !important;
+  }
+
+  .join-card, .contact-card {
+    max-width: 85%;
+    margin: 60px auto !important;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+}
+
+/* === 🖥️ Desktop (min 993px) === */
+@media (min-width: 993px) {
+  main, .join, contact, .contact-section {
+    margin-top: 110px !important;
+  }
+
+  .join-card, .contact-card {
+    max-width: 650px;
+    margin: 80px auto !important;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  }
+    }
