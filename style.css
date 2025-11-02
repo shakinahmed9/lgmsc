@@ -415,7 +415,7 @@ body.page-team {
 /* === Join Us Section === */
 .join {
   padding: 80px 20px;
-  background: linear-gradient(160deg, rgba(15, 32, 39, 0.8), rgba(32, 58, 67, 0.8));
+  background: linear-gradient(160deg, rgba(15, 32, 39, 0.8), rgba(15, 32, 39, 0.8),);
   backdrop-filter: blur(12px);
   text-align: center;
   animation: fadeIn 1.5s ease forwards;
