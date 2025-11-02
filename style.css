@@ -423,7 +423,7 @@ body.page-team {
 }
 
 .join-card {
-  max-width: 700px;
+  max-width: 600px;
   margin: 0 auto;
   background: rgba(20, 40, 50, 0.6);
   border-radius: var(--radius);
@@ -484,30 +484,6 @@ body.page-team {
 .apply-form textarea:focus {
   border-color: var(--accent);
   box-shadow: 0 0 10px rgba(0, 255, 174, 0.4);
-}
-.apply-form select {
-  appearance: none;           /* Default browser style বন্ধ করে */
-  -webkit-appearance: none;   /* Safari, Chrome এর জন্য */
-  -moz-appearance: none;      /* Firefox এর জন্য */
-  background: rgba(255, 255, 255, 0.05);
-  color: var(--text);
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
-
-.apply-form select:focus {
-  border-color: var(--accent);
-  box-shadow: 0 0 10px rgba(0, 255, 174, 0.4);
-  background: rgba(255, 255, 255, 0.1);
-}
-
-/* ঐচ্ছিক: custom dropdown arrow যোগ করতে পারো */
-.apply-form select {
-  background-image: url("data:image/svg+xml;utf8,<svg fill='white' height='14' viewBox='0 0 24 24' width='14' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
-  background-repeat: no-repeat;
-  background-position: right 12px center;
-  background-size: 12px;
-  padding-right: 30px;
 }
 
 .apply-form .form-row {
