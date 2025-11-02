@@ -427,7 +427,7 @@ body.page-team {
   background: var(--glass);
   border-radius: var(--radius);
   border: 1px solid rgba(255, 255, 255, 0.06);
-  padding: 40px 30px;
+  padding: 45px 30px;
   box-shadow: 0 0 40px rgba(0, 255, 174, 0.1);
   animation: floatUp 1.6s ease;
 }
