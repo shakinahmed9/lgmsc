@@ -35,7 +35,7 @@ const joinForm = document.getElementById("joinForm");
 if (joinForm) {
   joinForm.addEventListener("submit", async (e) => {
     e.preventDefault();
-    await sendToDiscord(e.target, "Join Us", webhooks.join);
+    await sendToDiscord(e.target, "Join Us", webhooks.join, "<@1396850738868519022>");
     alert("✅ Application sent successfully!");
     e.target.reset();
   });
@@ -46,7 +46,7 @@ const contactForm = document.getElementById("contactForm");
 if (contactForm) {
   contactForm.addEventListener("submit", async (e) => {
     e.preventDefault();
-    await sendToDiscord(e.target, "Contact", webhooks.contact);
+    await sendToDiscord(e.target, "Contact", webhooks.contact, "<@1396850738868519022>");
     alert("✅ Message sent successfully!");
     e.target.reset();
   });
