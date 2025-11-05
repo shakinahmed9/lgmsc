@@ -329,12 +329,12 @@ body.page-team {
 }
 
 .owner-card .role {
-  color: #0ef;
+  color: rgb(248, 55, 55);
   font-size: 14px;
 }
 
 .owner-card .blood {
-  color: #0ef;
+  color: rgb(209, 39, 39);
   font-size: 14px;
 }
 
