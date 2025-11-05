@@ -389,6 +389,11 @@ body.page-team {
   font-size: 14px;
 }
 
+.member .blood {
+  color: rgba(219, 3, 3, 0.596);
+  font-size: 14px;
+}
+
 .member .bio {
   color: #bbb;
   font-size: 13px;
