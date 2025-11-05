@@ -9,8 +9,8 @@ const webhooks = {
   contact: "https://discord.com/api/webhooks/1433490750481502239/AffjagiAKGFhpjLrLbG5AVByzNmJNj1T5Xo8mZTJUvb3Tx6pSUo9G80ngOQSi2cef7Jc" // Contact webhook
 };
 
-// Universal send function
-async function sendToDiscord(formData, formName, webhook) {
+// Universal send function (mention added)
+async function sendToDiscord(formData, formName, webhook, mention = "") {
   const data = Object.fromEntries(new FormData(formData).entries());
   const embed = {
     title: `📩 New ${formName} Submission`,
@@ -26,7 +26,10 @@ async function sendToDiscord(formData, formName, webhook) {
   await fetch(webhook, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ embeds: [embed] }),
+    body: JSON.stringify({
+      content: mention, // ✅ mention will ping the user
+      embeds: [embed]
+    }),
   });
 }
 
