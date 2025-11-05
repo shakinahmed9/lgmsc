@@ -333,6 +333,11 @@ body.page-team {
   font-size: 14px;
 }
 
+.owner-card .blood {
+  color: #0ef;
+  font-size: 14px;
+}
+
 .owner-card .bio {
   color: #bbb;
   font-size: 13px;
