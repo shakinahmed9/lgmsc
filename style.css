@@ -518,7 +518,6 @@ body.page-team {
 /* Dropdown option styling */
 .apply-form select option {
   background-color: #0f2027;   /* dropdown background */
-  border-radius: 20px;
   color: #fff;                 /* option text color */
   padding: 10px;
   transition: background 0.2s ease, color 0.2s ease;
