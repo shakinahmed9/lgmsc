@@ -495,9 +495,9 @@ body.page-team {
   width: 100%;
   padding: 12px 14px;
   margin-top: 6px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: var(--radius);
-  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px; /* More rounded corners */
+  background: rgba(255, 255, 255, 0.07);
   color: var(--text);
   font-size: 15px;
   outline: none;
@@ -506,6 +506,37 @@ body.page-team {
   -webkit-appearance: none;
   -moz-appearance: none;
   cursor: pointer;
+
+  /* Custom arrow */
+  background-image: url("data:image/svg+xml;utf8,<svg fill='%23ffffff' height='16' viewBox='0 0 24 24' width='16' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  background-size: 16px;
+  padding-right: 40px;
+}
+
+/* When focused */
+.apply-form select:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 15px rgba(0, 255, 174, 0.45);
+  background: rgba(255,255,255,0.12);
+}
+
+/* Dropdown list (WebKit browsers) */
+.apply-form select::-webkit-scrollbar {
+  width: 8px;
+}
+.apply-form select option {
+  background-color: #0d1b22;
+  border: none;
+  padding: 12px;
+  border-radius: 8px; /* slightly rounded inside options */
+}
+
+/* Try to smooth dropdown corners (for WebKit browsers) */
+select {
+  border-radius: 12px;
+  overflow: hidden;
 }
 
 /* Focus effect */
