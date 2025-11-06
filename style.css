@@ -568,11 +568,18 @@ body.page-team {
 
 /* Add a softer arrow */
 .apply-form select {
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.15);
   background-image: url("data:image/svg+xml;utf8,<svg fill='%23ffffff' height='16' viewBox='0 0 24 24' width='16' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat; /* <-- fix */
   background-position: right 14px center;
-  background-size: 14px;
+  background-size: 16px; /* <-- fix */
   padding-right: 38px;
+  appearance: none;
+  -webkit-appearance: none;
 }
+
 
 .apply-form .form-row {
   display: flex;
